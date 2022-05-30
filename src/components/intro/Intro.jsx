@@ -1,9 +1,7 @@
 import "./intro.scss";
 
 const Intro = () => {
-  return (
-    <div className='intro'></div>
-  )
+  return <div id="intro" className="intro"></div>;
 }
 
 export default Intro
