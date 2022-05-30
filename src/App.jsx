@@ -1,4 +1,5 @@
 import React from "react";
+import './app.scss'
 import Topbar from "./components/topbar/Topbar";
 import Intro from "./components/intro/Intro";
 import Portfolio from "./components/portfolio/Portfolio";
@@ -9,7 +10,7 @@ import Contact from "./components/contact/Contact";
 
 function App() {
   return (
-    <div>
+    <div className="app">
       <Topbar />
       <div className="sections">
         <Intro />
