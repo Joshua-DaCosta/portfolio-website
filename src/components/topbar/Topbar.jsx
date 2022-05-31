@@ -5,9 +5,14 @@ const Topbar = () => {
     <div className='topbar'>
       <div className="wrapper">
         <div className="left">
-          <a href="#intro">Joshua</a>
+          <a href="#intro" className='logo'>Joshua Da Costa.</a>
+          <div className="itemContainer">
+            
+          </div>
         </div>
-        <div className="right"></div>
+        <div className="right">
+          right side
+        </div>
       </div>
     </div>
   )
