@@ -25,8 +25,10 @@ const Contact = () => {
         <form onSubmit={(e) => handleSubmit(e)}>
           <input type="text" placeholder="Email" />
           <textarea placeholder="Message"></textarea>
-          <button type="submit" prev>Send</button>
-          {message && <span>Thank you, I will reach out ASAP :)</span>}
+          <button type="submit" prev>
+            Send
+          </button>
+          {message && <p>Thank you, I will reach out ASAP &#128516;</p>}
         </form>
       </div>
     </section>
