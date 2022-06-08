@@ -39,6 +39,10 @@
         span {
           font-weight: 500;
         }
+
+        @include mobile {
+          display: none;
+        }
       }
     }
 

@@ -13,8 +13,17 @@
   justify-content: center;
   transition: all 1s ease;
 
+   @include mobile {
+          opacity: 0.8;
+          
+        }
+
   &.active {
     right: 0;
+     @include mobile {
+          width: 100%;
+          text-align: center;
+        }
   }
 
   ul {
@@ -26,6 +35,10 @@
     li {
       margin-bottom: 20px;
       transition: all 100ms ease;
+
+       @include mobile {
+          border-bottom: 1px solid white;
+        }
       a {
     font-size: 30px;
         
