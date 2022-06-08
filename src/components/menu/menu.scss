@@ -14,15 +14,16 @@
   transition: all 1s ease;
 
    @include mobile {
-          opacity: 0.8;
-          
+          opacity: 0.77;
+          text-align: center;
+          margin: 0;
         }
 
   &.active {
     right: 0;
      @include mobile {
           width: 100%;
-          text-align: center;
+          
         }
   }
 
@@ -32,6 +33,10 @@
     list-style: none;
     font-weight: 300;
     color: white;
+
+       @include mobile {
+          margin: 0;
+        }
     li {
       margin-bottom: 20px;
       transition: all 100ms ease;
