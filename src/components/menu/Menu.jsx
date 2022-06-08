@@ -1,5 +1,7 @@
 import React from 'react'
 import './menu.scss'
+import { Person, Mail } from "@material-ui/icons";
+
 const Menu = ({menuOpen,setMenuOpen}) => {
   return (
     <div className={`menu ${menuOpen && "active"}`}>
@@ -17,6 +19,14 @@ const Menu = ({menuOpen,setMenuOpen}) => {
           <a href="#testimonials">Testimonials</a>
         </li>
       </ul>
+      <div className="itemContainer">
+        <Person className="icon" />
+        <span>647-979-8407</span>
+      </div>
+      <div className="itemContainer">
+        <Mail className="icon" />
+        <span>joshua.0331@hotmail.com</span>
+      </div>
     </div>
   );
 }
