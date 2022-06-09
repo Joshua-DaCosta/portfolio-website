@@ -50,7 +50,10 @@ const Portfolio = () => {
                 </a>
                 <h3>{data.title}</h3>
                 <div>
-                  <p className="readMore" onClick={() => setReadMore(readMore ? false : true)}>
+                  <p
+                    className="readMore"
+                    onClick={() => setReadMore(readMore ? false : true)}
+                  >
                     Read More
                   </p>
                   {readMore && <p className="details">{data.details}</p>}

@@ -25,6 +25,9 @@ const Contact = () => {
         />
       </div>
       <div className="right">
+        {message && (
+          <p className="desktop">Thank you, I will reach out ASAP &#128516;</p>
+        )}
         <h2>Contact.</h2>
         <form onSubmit={(e) => handleSubmit(e)}>
           <input type="text" placeholder="Email" />
@@ -32,11 +35,6 @@ const Contact = () => {
           <button type="submit" prev>
             Send
           </button>
-          {message && (
-            <p className="desktop">
-              Thank you, I will reach out ASAP &#128516;
-            </p>
-          )}
         </form>
       </div>
     </section>
