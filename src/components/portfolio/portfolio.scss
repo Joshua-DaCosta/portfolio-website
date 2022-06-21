@@ -25,8 +25,10 @@
     width: 100%;
     display: flex;
     align-items: center;
-    justify-content: space-around;
-    flex-wrap: wrap;
+    justify-content: center;
+      @include mobile {
+        flex-direction: column;
+      }
 
     .item {
       display: flex;
@@ -34,14 +36,16 @@
       align-items: center;
       justify-content: center;
       border-radius: 20px;
-      width: 100%;
+      width: 25%;
       @include mobile {
         text-align: center;
+        width: 90%;
       }
 
       img {
         height: 200px;
         width: 300px;
+        border: 3px solid black;
         border-radius: 20px;
         @include mobile {
           height: 250px;
@@ -86,8 +90,9 @@
 
       &:hover {
         img {
-          opacity: 0.7;
+          border: 3px solid darkcyan;
           cursor: pointer;
+          overflow: hidden;
           
         }
       }

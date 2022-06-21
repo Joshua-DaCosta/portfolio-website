@@ -3,7 +3,7 @@ import './app.scss'
 import Topbar from "./components/topbar/Topbar";
 import Intro from "./components/intro/Intro";
 import Portfolio from "./components/portfolio/Portfolio";
-import Testimonials from "./components/testimonials/Testimonials";
+import Skills from "./components/skills/Skills";
 import Contact from "./components/contact/Contact";
 import Menu from "./components/menu/Menu";
 
@@ -22,7 +22,6 @@ const [menuOpen, setMenuOpen] = useState(false);
         <Intro />
         <Portfolio />
         <Contact />
-        <Testimonials />
       </div>
     </div>
   );

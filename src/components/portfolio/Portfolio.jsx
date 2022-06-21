@@ -6,7 +6,6 @@ import { featured } from "../../data";
 const Portfolio = () => {
   const [selected, setSelected] = useState("featured");
   const [data, setdata] = useState(featured);
-  const [readMore, setReadMore] = useState(false);
 
   useEffect(() => {
     switch (selected) {
@@ -45,19 +44,10 @@ const Portfolio = () => {
         data.map((data) => {
             return (
               <div className="item">
-                <a href={data.href} target={"_blank"}>
+                <a href={data.href} target={"_blank"} rel="noreferrer">
                   <img src={data.img} alt={data.alt} />
                 </a>
                 <h3>{data.title}</h3>
-                <div>
-                  <p
-                    className="readMore"
-                    onClick={() => setReadMore(readMore ? false : true)}
-                  >
-                    Read More
-                  </p>
-                  {readMore && <p className="details">{data.details}</p>}
-                </div>
               </div>
             );
         })}
