@@ -1,22 +1,18 @@
-@import './global.scss';
+@import "./global.scss";
 .app {
   height: 100vh;
 
   .sections {
-@include custom-scroll-bar(#999);
+    @include custom-scroll-bar(#999);
     width: 100%;
     height: calc(100vh - 70px);
     background-color: white;
     position: relative;
     top: 70px;
-
     scroll-behavior: smooth;
-    scroll-snap-type: y mandatory;
 
     > * {
       width: 100vw;
-      height: calc(100vh - 70px);
-      scroll-snap-align: start;
     }
   }
 }

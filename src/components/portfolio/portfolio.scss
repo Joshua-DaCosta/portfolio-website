@@ -25,36 +25,49 @@
     width: 100%;
     display: flex;
     align-items: center;
-    justify-content: center;
-      @include mobile {
-        flex-direction: column;
-      }
+    justify-content: space-around;
+    @include mobile {
+      flex-direction: column;
+    }
 
     .item {
       display: flex;
       flex-direction: column;
-      align-items: center;
+      align-items: flex-start;
       justify-content: center;
       border-radius: 20px;
-      width: 25%;
+      width: 32%;
+      border: 1px solid rgb(236, 236, 236);
+
+      &:hover {
+            border: 1px solid black;
+            cursor: pointer;
+         
+        }
+
       @include mobile {
         text-align: center;
         width: 90%;
       }
 
       img {
-        height: 200px;
-        width: 300px;
-        border: 3px solid black;
-        border-radius: 20px;
+        height: 250px;
+        width: 100%;
+        border-radius: 20px 20px 0 0;
         @include mobile {
           height: 250px;
           width: 95%;
         }
+
+        
       }
       h3 {
         font-size: 28px;
-        margin-top: 20px;
+        margin: 20px 0 0 20px;
+      }
+
+      p {
+        padding: 20px;
       }
 
       div {
@@ -63,25 +76,24 @@
         justify-content: center;
         align-items: center;
         width: 40%;
-          @include mobile{
-            width: 100%;
-
-          }
+        @include mobile {
+          width: 100%;
+        }
         .readMore {
           color: rgb(0, 0, 155);
           text-decoration: underline;
           cursor: pointer;
           margin: 20px 0;
-            @include mobile{
+          @include mobile {
             font-size: 16px;
           }
         }
 
-        .details{
+        .details {
           color: black;
           font-size: 20px;
           line-height: 1.5;
-            @include mobile{
+          @include mobile {
             text-align: left;
             margin-left: 10px;
           }
@@ -90,10 +102,8 @@
 
       &:hover {
         img {
-          border: 3px solid darkcyan;
           cursor: pointer;
           overflow: hidden;
-          
         }
       }
     }

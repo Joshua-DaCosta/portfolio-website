@@ -48,6 +48,7 @@ const Portfolio = () => {
                   <img src={data.img} alt={data.alt} />
                 </a>
                 <h3>{data.title}</h3>
+                <p>{data.details}</p>
               </div>
             );
         })}

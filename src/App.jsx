@@ -21,8 +21,8 @@ const [menuOpen, setMenuOpen] = useState(false);
       <div className="sections">
         <Intro />
         <Portfolio />
-        <Contact />
       </div>
+    
     </div>
   );
 }
